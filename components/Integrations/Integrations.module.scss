@@ -1,0 +1,48 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+.section {
+padding: 250px 0;
+}
+.text {
+    font-family: $accent-font;
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 767px ) {
+    .integrations_list {
+        margin: 0 auto;
+        width: 280px;
+        & li {
+            margin-bottom: 20px;
+            width: 280px;
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        & li:last-child {
+            margin-bottom: 0;
+        }
+        li:nth-last-child(-n + 2) {
+           width: 102px;
+          }
+    }
+}
+@media screen and (min-width: 768px) {
+    .text {
+        font-size: 64px;
+    }
+    .integrations_list {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        & li {
+            margin-bottom: 0;
+        }
+    }
+}

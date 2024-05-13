@@ -1,0 +1,30 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+.button_withborder{
+    color: $text-color;
+    font-weight: 500;
+    padding: 16px 24px;
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, rgba(150,52,136,1) 0%, rgba(252,111,50,1) 50%, rgba(255,74,89,1) 100%) border-box;
+    border: 2px solid transparent;
+    border-radius: 50px;
+
+    &:hover,
+    &:focus {
+        background: $border-color;
+    }
+    
+}
+
+.button {
+    color: $text-color;
+    font-weight: 500;
+    padding: 16px 24px;
+    &:hover,
+    &:focus {
+        background: -webkit-linear-gradient(90deg, rgba(150,52,136,1) 0%, rgba(252,111,50,1) 50%, rgba(255,74,89,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

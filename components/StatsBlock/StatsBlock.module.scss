@@ -1,0 +1,59 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+
+.stats_item {
+    color: $text-color;
+    text-align: center;
+    background: rgb(139,69,19, 0.3);
+    min-width: 94px;
+    padding: 20px;
+    border-radius: 90px;
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.stats_figure {
+    font-weight: 700;
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+.stats_text {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  
+    .stats_item {
+        min-width: 120px;
+    }
+    .stats_figure {
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+    .stats_text {
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .stats_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 390px;
+       }
+    .stats_item {
+        min-width: 352px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .stats_item {
+        min-width: 528px;
+    }
+}

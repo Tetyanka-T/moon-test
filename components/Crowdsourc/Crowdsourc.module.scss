@@ -1,0 +1,42 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+.section {
+    padding: 250px 0;
+}
+.title {
+    font-family: $accent-font;
+    font-family: 500;
+    font-size: 35px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+.text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 64px;
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+    .text {
+       max-width: 680px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .title {
+        max-width: 718px;
+    }
+    .text {
+        max-width: 900px;
+     }
+}
+@media screen and (min-width: 1800px) {
+    .title {
+        max-width: 950px;
+    }
+    .text {
+        max-width: 1200px;
+    }
+}

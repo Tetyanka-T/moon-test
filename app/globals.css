@@ -1,0 +1,45 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  /* background-color: #000000; */
+  background-image: linear-gradient(180deg, #000000 36.4%, #191E2A 100%);
+  color: #fff;
+  font-weight: 400;
+ 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+input {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

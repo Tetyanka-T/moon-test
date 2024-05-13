@@ -1,0 +1,22 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+
+.header {
+    padding: 30px 10px;
+  
+}
+.menu_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: $text-color;
+}
+
+@media screen and (min-width: 768px) {
+    .menu_list {
+       gap: 40px;
+    }
+}

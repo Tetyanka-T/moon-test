@@ -1,0 +1,46 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+.title {
+  font-family: $accent-font;
+  font-weight: 500;
+  font-size: 45px;
+  background: -webkit-linear-gradient(90deg, rgba(181,62,164,1) 0%, rgba(252,111,50,1) 39%, rgba(255,74,89,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover {
+    background: -webkit-linear-gradient(90deg, rgba(255,214,249,1) 0%, rgba(255,203,180,1) 50%, rgba(255,190,195,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.text {
+  margin: 50px 0 30px 0;
+  font-size: 18px;
+}
+
+.button_container {
+  margin-bottom: 145px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .text {
+    margin: 50px 0 30px 0;
+    font-size: 24px;
+  }
+  .button_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 145px;
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 128px;
+  }
+}
