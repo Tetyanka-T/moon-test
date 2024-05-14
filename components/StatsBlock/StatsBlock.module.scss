@@ -1,12 +1,22 @@
 @use '../../styles/common.module.scss';
 @use '../../styles/variables' as *;
-
+.container_stats {
+    margin-bottom: 200px;
+}
+.stats_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+   }
 
 .stats_item {
     color: $text-color;
     text-align: center;
     background: rgb(139,69,19, 0.3);
-    min-width: 94px;
+    min-width: 290px;
     padding: 20px;
     border-radius: 90px;
     margin-bottom: 20px;
@@ -26,9 +36,6 @@
 
 @media screen and (min-width: 768px) {
   
-    .stats_item {
-        min-width: 120px;
-    }
     .stats_figure {
         font-weight: 700;
         font-size: 64px;
@@ -45,7 +52,6 @@
         align-items: center;
         justify-content: center;
         gap: 30px;
-        margin-bottom: 390px;
        }
     .stats_item {
         min-width: 352px;

@@ -1,10 +1,13 @@
+"use client";
+
 import Button from "../Buttons/Button";
 import ButtonWithBorder from "../Buttons/ButtonWithBorder";
+import StatsBlock from "../StatsBlock/StatsBlock";
 import s from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <>
+    <div className="section">
       <h1 className={s.title}>
         A new economic primitive for funding decentralized AI
       </h1>
@@ -16,7 +19,8 @@ const Hero = () => {
         <ButtonWithBorder font={24} text={"Buy Spice AI"} />
         <Button text={"Try Now"} font={24} />
       </div>
-    </>
+      {/* <StatsBlock /> */}
+    </div>
   );
 };
 

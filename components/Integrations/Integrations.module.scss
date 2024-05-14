@@ -1,19 +1,18 @@
 @use '../../styles/common.module.scss';
 @use '../../styles/variables' as *;
 
-.section {
-padding: 250px 0;
-}
+
 .text {
     font-family: $accent-font;
     font-weight: 500;
     font-size: 45px;
     margin-bottom: 50px;
     text-align: center;
+    margin-top: 200px;
 }
 
 
-@media screen and (max-width: 767px ) {
+@media screen and (max-width: 1199px ) {
     .integrations_list {
         margin: 0 auto;
         width: 280px;
@@ -33,14 +32,14 @@ padding: 250px 0;
           }
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     .text {
         font-size: 64px;
     }
     .integrations_list {
         display: flex;
         align-items: center;
-        gap: 120px;
+        gap: 60px;
         & li {
             margin-bottom: 0;
         }
