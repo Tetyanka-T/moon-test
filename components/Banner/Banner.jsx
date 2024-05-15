@@ -8,7 +8,7 @@ const Banner = ({ children }) => {
     <div className={s.banner}>
       <div className={s.spot_top}></div>
       <div className={s.spot_bottom}></div>
-      <Parallax pages={2.6}>
+      <Parallax pages={3}>
         <ParallaxLayer offset={0} speed={-0.8} className={s.moon} />
         <ParallaxLayer speed={0.8} factor={1}>
           {children}
