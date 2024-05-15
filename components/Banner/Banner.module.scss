@@ -5,10 +5,26 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-image: url(../../public/spot-top.png), url(../../public/spot.png);
-    background-repeat: no-repeat;
+    
 }
-
+.spot_bottom {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/spot.png);
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: bottom left;
+}
+.spot_top {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/spot-top.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #000;
+}
 .moon {
     background-image: url(../../public/hero-moon.png);
     background-position: top right;
