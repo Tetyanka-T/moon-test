@@ -19,7 +19,7 @@ const Hero = () => {
         <ButtonWithBorder font={24} text={"Buy Spice AI"} />
         <Button text={"Try Now"} font={24} />
       </div>
-      {/* <StatsBlock /> */}
+      <StatsBlock />
     </div>
   );
 };

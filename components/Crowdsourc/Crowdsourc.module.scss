@@ -1,13 +1,11 @@
 @use '../../styles/common.module.scss';
 @use '../../styles/variables' as *;
-.section {
-    padding: 50px 0;
-}
+
 .title {
     font-family: $accent-font;
     font-family: 500;
     font-size: 35px;
-    margin-bottom: 20px;
+    margin: 100px 0 20px 0;
     max-width: 300px;
 }
 .text {

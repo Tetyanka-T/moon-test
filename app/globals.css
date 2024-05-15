@@ -8,6 +8,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 html,
 body {
@@ -15,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 body {
-  background: #000;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 36%, rgba(25,30,42,1) 100%);
   color: #fff;
   font-weight: 400;
 }
@@ -47,8 +48,5 @@ p {
 
 .section {
   height: 100vh;
-  scroll-snap-align: top;
-  scroll-snap-stop: normal;
-  /* scroll-margin-top: 100px; */
-  /* margin: 100px 0; */
+  scroll-snap-stop: always;
 }
