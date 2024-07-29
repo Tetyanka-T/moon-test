@@ -7,13 +7,15 @@ import s from "../styles/common.module.scss";
 
 export default function Home() {
   return (
-    <Banner>
-      <Header />
-      <main className={s.container}>
-        <Hero />
-        <Integrations />
-        <Crowdsourc />
-      </main>
-    </Banner>
+    <>
+      <Banner>
+        <Header />
+        <main className={s.container}>
+          <Hero />
+          <Integrations />
+          <Crowdsourc />
+        </main>
+      </Banner>
+    </>
   );
 }

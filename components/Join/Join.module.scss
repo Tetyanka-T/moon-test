@@ -1,0 +1,43 @@
+@use '../../styles/common.module.scss';
+@use '../../styles/variables' as *;
+
+.join {
+    padding: 120px 0;
+    position: relative;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+      
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+      
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    @media screen and (min-width: 1800px) {
+        max-width: 1800px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }    
+}
+.title {
+    font-family: $accent-font;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.text {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.join_moon {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: -1;
+}
