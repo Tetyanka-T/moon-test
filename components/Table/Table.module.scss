@@ -1,2 +1,57 @@
 @use '../../styles/common.module.scss';
 @use '../../styles/variables' as *;
+ 
+.wrapper_title {
+margin-bottom: 20px;
+}
+.title {
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 24px;
+}
+.table_wrapper {
+    overflow-x: auto;
+    padding-bottom: 50px;
+    margin: 50px 0 30px 0;
+}
+.table {
+    font-size: 16px;
+    width: 100%;
+    
+    &  td {
+        padding: 12px;
+        min-width: 130px;
+    }
+    & td:nth-child(2), td:first-child {
+        min-width: 20px;
+    }
+    & tr:nth-child(even) {
+        background-color:rgba(201, 217, 255, 0.08);
+    }
+}
+.table_head {
+    font-weight: 600;
+}
+
+.button_down {
+    display: flex;
+    margin-left: auto;
+}
+.button_up__container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button_up {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+    .wrapper_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     
+    }
+}

@@ -1,4 +1,5 @@
-import Image from "next/image";
+import { Mail, Logo } from "../svg";
+
 import s from "./Footer.module.scss";
 
 const Footer = () => {
@@ -13,10 +14,10 @@ const Footer = () => {
         <li className={s.footer_item}>
           <ul className={s.footer_item__list}>
             <li>
-              <Image src="/leter.png" width="36" height="36" alt="leter" />
+              <Mail />
             </li>
             <li>
-              <Image src="/logo.png" width="36" height="36" alt="logo" />
+              <Logo />
             </li>
           </ul>
         </li>
