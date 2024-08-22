@@ -1,17 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import ButtonWithBorder from "../Buttons/ButtonWithBorder";
 import { Up, Down, Dash, ButtonDown, ButtonUp } from "../svg";
-
+import style from "../../styles/common.module.scss";
 import s from "./Table.module.scss";
 
 const Table = () => {
   const [showMore, setShowMore] = useState(false);
-  const [showLess, setShowLess] = useState(false);
+  const router = useRouter();
 
+  const onScroll = () => {
+    router.push("/#table");
+    setShowMore(false);
+  };
   return (
-    <div className={s.container}>
+    <div className={style.container}>
       <div className={s.wrapper_title}>
         <h1 className={s.title}>LLM Leaderboard</h1>
         <ButtonWithBorder text="Submit your model" font={24} />
@@ -55,7 +60,7 @@ const Table = () => {
               <td>76.12</td>
               <td>1,384,193</td>
             </tr>
-            <tr>
+            <tr id="table">
               <td>
                 <Up />
               </td>
@@ -298,10 +303,7 @@ const Table = () => {
       {showMore && (
         <div className={s.button_up__container}>
           <p>View full leaderboard</p>
-          <button
-            className={s.button_up}
-            // onClick={() => window.scrollTo(0, 0)}
-          >
+          <button className={s.button_up} onClick={() => onScroll()}>
             <ButtonUp />
           </button>
         </div>

@@ -10,7 +10,7 @@
   background-position: bottom center;
   background-size: cover;
   position: absolute;
-  bottom: 170px;
+  bottom: 185px;
   left: 0;
 }
 .footer_title {
@@ -72,4 +72,19 @@
             margin-right: 0;
         }
     }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        bottom: 190px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .footer {
+        bottom: 230px;
+    }
+
 }

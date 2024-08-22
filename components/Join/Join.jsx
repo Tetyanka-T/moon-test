@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useInView, useAnimation } from "framer-motion";
 import s from "./Join.module.scss";
-
+import style from "../../styles/common.module.scss";
 const Join = () => {
   const ref = useRef(null);
   const isinView = useInView(ref, { once: true });
@@ -16,7 +16,7 @@ const Join = () => {
     }
   }, [isinView, mainControls]);
   return (
-    <div className="section" ref={ref}>
+    <div className={style.container} ref={ref}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 100 },
@@ -24,7 +24,7 @@ const Join = () => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.8, delay: 0.35 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <div className={s.join}>
           <h4 className={s.title}>Join our community</h4>
