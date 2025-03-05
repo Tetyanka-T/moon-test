@@ -28,7 +28,8 @@
 .moon {
     background-image: url(../../public/hero-moon.png);
     background-position: top right;
-    background-size: cover;
+    background-size: contain;
+    background-color: #000;
 }
 
 
